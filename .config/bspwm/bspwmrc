@@ -18,5 +18,5 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 
-xrandr --output eDP --brightness 0.3
-wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.9
+xrandr --output eDP --brightness 0.2
+wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.6
