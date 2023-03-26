@@ -19,4 +19,4 @@ bspc rule -a Screenkey manage=off
 
 
 xrandr --output eDP --brightness 0.3
-wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.6
+wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.9
