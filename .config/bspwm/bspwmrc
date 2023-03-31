@@ -17,8 +17,8 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a firefox desktop='^1' follow=on
-bspc rule -a TelegramDesktop desktop='^10'
-bspc rule -a Chromium-browser desktop='^9'
+bspc rule -a TelegramDesktop desktop='^10' follow=off
+bspc rule -a Chromium-browser desktop='^9' follow=off
 
 xrandr --output eDP --brightness 0.2
 wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.9
