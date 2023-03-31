@@ -17,8 +17,8 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 bspc rule -a firefox desktop='^1' follow=on
-bspc rule -a TelegramDesktop desktop='^9'
-
+bspc rule -a TelegramDesktop desktop='^10'
+bspc rule -a Chromium-browser desktop='^9'
 
 xrandr --output eDP --brightness 0.2
 wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.9
@@ -30,6 +30,8 @@ if [ ! -e /tmp/startup_completed ]; then
     firefox &
     sleep 0.5
     flatpak run org.telegram.desktop &
-    sleep 0.5
+    sleep 0.25
+    flatpak run com.github.Eloston.UngoogledChromium &
+    sleep 0.25
     touch /tmp/startup_completed
 fi
