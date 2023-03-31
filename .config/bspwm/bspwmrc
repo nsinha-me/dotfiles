@@ -19,6 +19,8 @@ bspc rule -a Screenkey manage=off
 bspc rule -a firefox desktop='^1' follow=on
 bspc rule -a TelegramDesktop desktop='^10' follow=off
 bspc rule -a Chromium-browser desktop='^9' follow=off
+bspc rule -a transmission-gtk desktop='^8' follow=off
+
 
 xrandr --output eDP --brightness 0.2
 wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.9
@@ -30,8 +32,10 @@ if [ ! -e /tmp/startup_completed ]; then
     firefox &
     sleep 0.5
     flatpak run org.telegram.desktop &
-    sleep 0.25
+    sleep 0.5
     flatpak run com.github.Eloston.UngoogledChromium &
-    sleep 0.25
+    sleep 0.5
+    flatpak run com.transmissionbt.Transmission &
+    sleep 0.5
     touch /tmp/startup_completed
 fi
