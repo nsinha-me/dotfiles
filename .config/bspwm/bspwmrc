@@ -29,13 +29,14 @@ feh --bg-scale /home/nik/pics/wall/1.jpg
 
 
 if [ ! -e /tmp/startup_completed ]; then
-    firefox &
-    sleep 0.5
+    
     flatpak run org.telegram.desktop &
     sleep 0.5
     flatpak run com.github.Eloston.UngoogledChromium &
     sleep 0.5
     flatpak run com.transmissionbt.Transmission &
+    sleep 0.5
+    firefox &
     sleep 0.5
     touch /tmp/startup_completed
 fi
