@@ -21,6 +21,7 @@ bspc rule -a TelegramDesktop desktop='^10' follow=off
 bspc rule -a Chromium-browser desktop='^9' follow=off
 bspc rule -a transmission-gtk desktop='^8' follow=off
 
+dunst &
 
 xrandr --output eDP --brightness 0.2
 wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.9
