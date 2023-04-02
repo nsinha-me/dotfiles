@@ -26,7 +26,7 @@ dunst &
 xrandr --output eDP --brightness 0.2
 wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.9
 
-feh --bg-scale /home/nik/pics/wall/1.jpg
+feh --bg-scale --randomize /home/nik/pics/wall/*
 
 
 if [ ! -e /tmp/startup_completed ]; then
