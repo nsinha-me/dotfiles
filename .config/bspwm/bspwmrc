@@ -41,3 +41,5 @@ if [ ! -e /tmp/startup_completed ]; then
     sleep 0.5
     touch /tmp/startup_completed
 fi
+
+setxkbmap -option ctrl:ralt_rctrl
