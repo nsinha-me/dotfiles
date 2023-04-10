@@ -24,7 +24,7 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = 400
+    width = 800
 
     # The maximum height of a single notification, excluding the frame.
     height = 400
@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 500x30
+    offset = 300x30
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
