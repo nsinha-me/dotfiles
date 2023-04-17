@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# Script for telling time as a notification
+notify-send -t 3500 "$(date '+%I:%M%p | %d%b | %A')"
+
