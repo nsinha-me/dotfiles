@@ -14,6 +14,16 @@ shift + @Print
 
 # xclip -selection clipboard -t image/png && notify-send "Screenshot has been captured" "Location: ~/pictures/screenshot"
 
+# BatteryStatus
+
+super + alt + p
+	batterystatus
+
+# brightness keys
+XF86MonBrightnessUp
+	changebrightness up
+XF86MonBrightnessDown
+	changebrightness down
 
 # terminal emulator
 super + Return
