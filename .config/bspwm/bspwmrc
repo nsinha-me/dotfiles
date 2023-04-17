@@ -46,3 +46,6 @@ fi
 
 sleep 1
 setxkbmap -option ctrl:ralt_rctrl
+
+sleep 1
+batterynotify &
