@@ -1,5 +1,7 @@
 #! /bin/sh
 
+export PATH="/home/nik/.local/bin:$PATH"
+
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d 1 2 3 4 5 6 7 8 9 0
@@ -23,7 +25,7 @@ bspc rule -a transmission-gtk desktop='^8' follow=off
 
 dunst &
 
-xrandr --output eDP --brightness 0.2
+# xrandr --output eDP --brightness 0.2
 wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.9
 
 feh --bg-scale --randomize /home/nik/pics/wall/*
