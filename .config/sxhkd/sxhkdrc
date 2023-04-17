@@ -19,6 +19,10 @@ shift + @Print
 super + alt + p
 	batterystatus
 
+# Display date and time notification
+super + alt + o
+	timenotify
+
 # brightness keys
 XF86MonBrightnessUp
 	changebrightness up
