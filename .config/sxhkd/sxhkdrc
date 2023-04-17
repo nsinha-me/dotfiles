@@ -2,6 +2,19 @@
 # wm independent hotkeys
 #
 
+# My hotkeys - 
+
+# printscreen
+@Print
+	maim --select | tee ~/pics/ss/$(date +%Y-%m-%d-%T).png | xclip -sel c -t image/png && notify-send "Selection screenshot taken" "Location: ~/pics/ss/"
+
+shift + @Print
+	maim | tee ~/pics/ss/$(date +%Y-%m-%d-%T).png | xclip -sel c -t image/png && notify-send "Full screenshot taken" "Location: ~/pics/ss/"
+
+
+# xclip -selection clipboard -t image/png && notify-send "Screenshot has been captured" "Location: ~/pictures/screenshot"
+
+
 # terminal emulator
 super + Return
 	alacritty
