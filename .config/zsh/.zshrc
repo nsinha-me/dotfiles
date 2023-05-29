@@ -32,3 +32,13 @@ autoload -Uz url-quote-magic
 zle -N self-insert url-quote-magic
 # Ends here.
 
+
+# Aliases
+
+alias y="yt-dlp "
+alias gs="git status"
+alias gpom="git push -u origin master"
+alias ga="git add"
+alias gc="git commit -m "
+alias diary="vim /home/nik/code/site/hugo/personal/content/diary/_index.md"
+alias nsinha="cd /home/nik/code/site/hugo/personal/"
