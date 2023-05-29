@@ -30,6 +30,7 @@ wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.9
 
 feh --bg-scale --randomize /home/nik/pics/wall/*
 
+picom &
 
 if [ ! -e /tmp/startup_completed ]; then
     
